@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 61, 61);
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+
+span::before{
+    content: 'TRANSIITONS';
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 1, 73);
+    animation: switch 5s  infinite;
+}
+
+
+@keyframes switch {
+    0%{
+        content: 'TRANSFORMATIONS';
+    }
+    50%{
+        content: 'ANIMATIONS';
+    }
+    100%{
+        content: 'TRANSFORMS';
+    }
+}

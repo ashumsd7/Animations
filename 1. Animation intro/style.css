@@ -1,0 +1,34 @@
+/* body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+} */
+
+div {
+  width: 200px;
+  height: 200px;
+  background: rgb(183, 0, 255);
+
+  box-shadow: 2px 4px 5px rgb(0, 0, 0);
+  border-radius: 20px;
+
+  animation-duration: 3s;
+  animation-name: move;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+   animation-timing-function: ease-out;
+   animation-direction: alternate;
+  /* //noraml alternate revers */
+
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(500px) translateY(500px) rotateZ(360deg);
+  }
+}

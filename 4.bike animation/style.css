@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  height: 100vh;
+  background: url(bg.jpg);
+  background-position: bottom left;
+  background-size: cover;
+  animation: moving 2s linear infinite ;
+}
+img {
+  position: absolute;
+  left: 200px;
+  top: 350px;
+  width: 350px;
+}
+
+@keyframes moving {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: bottom right;
+  }
+}

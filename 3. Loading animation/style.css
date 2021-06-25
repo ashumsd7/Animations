@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(3, 172, 93);
+      perspective: 200px;
+}
+.loading{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 12px;
+    box-shadow: 2px 4px black;
+    animation: loading 2s alternate infinite;
+  
+}
+
+
+@keyframes loading {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+   50%{
+        transform: rotateX(0deg) rotateY(180deg);
+   }
+   100%{
+        transform: rotateX(180deg) rotateY(180deg);
+   }
+}

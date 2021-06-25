@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 43, 43);
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    
+}
+
+.squre{
+    position: absolute;
+    bottom: -100px; 
+    background: #f2f2f2;
+    border-radius: 50%;
+    animation: boxes 5s infinite ease-in-out;
+
+}
+.squre:nth-child(1){
+    width: 75px;
+    height: 75px;
+    left: 7%;
+}
+.squre:nth-child(2){
+    width: 65px;
+    height: 65px;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.squre:nth-child(3){
+     width: 45px;
+    height: 45px;
+    left: 22%;
+    animation-delay: 3s;
+}
+
+.squre:nth-child(4){
+    width: 65px;
+    height: 65px;
+    left: 33%;
+     animation-delay: 5s;
+}
+
+.squre:nth-child(5){
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.squre:nth-child(6){
+    width: 55px;
+    height: 55px;
+    left: 65%;
+     animation-delay: 4s;
+}
+
+.squre:nth-child(7){
+    width: 85px;
+    height: 85px;
+    left: 75%;
+    animation-delay: 1s;
+}
+.squre:nth-child(8){
+    width: 75px;
+    height: 75px;
+    left: 90%;
+      animation-delay: 4s;
+}
+
+
+
+@keyframes boxes {
+    0%{
+        bottom: -100px;
+    }
+    100%{
+        bottom: 100%;
+        transform: rotateZ(180deg);
+        opacity: 0;
+    }
+    
+}
